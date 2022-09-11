@@ -1,3 +1,5 @@
+This is an improved version with varios bugfixes. It also works on NetBSD.
+
 # sqlite-fs
 
 ## About
