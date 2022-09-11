@@ -1,4 +1,4 @@
-This is an improved version with varios bugfixes. It also works on NetBSD.
+This is an improved version with various bugfixes. It also works on FreeBSD and NetBSD.
 
 # sqlite-fs
 
