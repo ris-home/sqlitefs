@@ -1,8 +1,8 @@
 [package]
-name = "sqlite-fs"
-version = "0.1.0"
-authors = ["Matsumura <naruaki.matt@gmail.com>"]
-edition = "2018"
+name = "sqlite-temporal-fs"
+version = "0.9.0"
+authors = ["RISHIKESHAN 🌱 <oss@rishikeshan.com>"]
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -11,15 +11,22 @@ fuse = "0.3"
 chrono = "0.4"
 libc = "0.2"
 failure = "0.1"
-log = "0.4"
-env_logger = "0.7"
+env_logger = "0.9"
 time = "0.1"
-clap = "2.33"
-nix = "0.15"
+nix = "0.25"
 
 [dependencies.rusqlite]
-version = "0.20.0"
+version = "0.28.0"
 features = ["bundled", "blob"]
+
+
+[dependencies.log]
+version="0.4"
+features=["release_max_level_off"]
+
+[dependencies.clap]
+version="3"
+features=["cargo"]
 
 [dev-dependencies]
 tempfile = "3"
