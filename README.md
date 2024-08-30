@@ -1,4 +1,8 @@
-This is an improved version with various bugfixes. It also works on FreeBSD and NetBSD.
+This is an improved version with various bugfixes (including a crash/corruption bug due to misaligned blocks). It also works on FreeBSD and NetBSD (if it does not work on NetBSD, please patch the fuse-rs crate with the files from `fuse/`). This work builds up on the amazing work by Naruaki Matsumura (who I know as [@narumatt](https://github.com/narumatt)).
+
+Code and fixes here (`sqlitefs` repo) are dual licensed under MIT/Apache-2.0
+
+Please star the repository if you find it interesting or useful. For a monotemporal filesystem built on the same (which records everything so you can do point-in-time inspections), please see [temporal_sqlitefs](https://github.com/ris-work/sqlitefs_temporal). It is available under OSLv3, which is approved by both the OSI and the FSF, but is more restrictive than dual-licensing under Apache-2.0 and MIT. 
 
 # sqlite-fs
 
