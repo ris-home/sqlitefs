@@ -44,7 +44,7 @@ fn main() {
         }
     }
 
-    let mountpoint = matches.get_one::<PathBuf>("mount_point").expect("Mount point path is missing.");
+    let mountpoint = matches.get_one::<String>("mount_point").expect("Mount point path is missing.");
     let db_path = matches.get_one::<String>("db_path");
     let options = option_vals
         .iter()
